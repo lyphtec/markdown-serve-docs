@@ -1,0 +1,37 @@
+{
+    "source": {
+        "include": [ "../markdown-serve/lib/resolver.js", "../markdown-serve/lib/parser.js", "../markdown-serve/lib/server.js", "../markdown-serve/README.md" ],
+        "exclude": []
+    },
+    "opts": {
+        "template": "./template",
+        "recurse": true,
+        "lenient": true
+    },
+	"tags"      : {
+		"allowUnknownTags" : true
+	},
+	"plugins"   : ["plugins/markdown"],
+
+	"templates" : {
+		"cleverLinks"           : false,
+		"monospaceLinks"        : false,
+		"dateFormat"            : "ddd MMM Do YYYY",
+		"outputSourceFiles"     : true,
+		"outputSourcePath"      : true,
+		"systemName"            : "markdown-serve",
+		"footer"                : "",
+		"copyright"             : "",
+		"navType"               : "vertical",
+		"theme"                 : "spacelab",
+		"linenums"              : true,
+		"collapseSymbols"       : false,
+		"inverseNav"            : false,
+		"highlightTutorialCode" : true,
+        "analytics"             : {"ua":"UA-2048899-10", "domain":"auto"}
+	},
+	"markdown"  : {
+		"parser"   : "gfm",
+		"hardwrap" : true
+	}
+}
