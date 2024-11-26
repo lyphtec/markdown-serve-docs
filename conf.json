@@ -12,7 +12,6 @@
 		"allowUnknownTags" : true
 	},
 	"plugins"   : ["plugins/markdown"],
-
 	"templates" : {
 		"cleverLinks"           : false,
 		"monospaceLinks"        : false,
@@ -33,5 +32,12 @@
 	"markdown"  : {
 		"parser"   : "gfm",
 		"hardwrap" : true
+	},
+	"docdash": {
+		"meta": {
+			"title": "markdown-serve",
+			"description": "markdown-serve is a simple markdown files server.",
+			"keyword": "markdown, serve, markdown-serve, expressjs, express middleware"
+		}
 	}
 }
