@@ -1,13 +1,12 @@
 {
   "name": "markdown-serve-docs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Docs generator for markdown-serve",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rm -rf ./out && jsdoc -c conf.json",
-    "serve": "node server.js",
-    "preview": "npm run serve && node browse.js"
+    "start": "jsdoc -c conf.json",
+    "serve": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -22,11 +21,15 @@
     "url": "https://github.com/lyphtec/markdown-serve-docs/issues"
   },
   "homepage": "https://github.com/lyphtec/markdown-serve-docs",
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
   "dependencies": {
-    "errorhandler": "^1.2.0",
-    "express": "^4.9.5",
-    "ink-docstrap": "^0.4.12",
-    "morgan": "^1.3.2",
-    "open": "0.0.5"
+    "docdash": "^2.0.2",
+    "express": "^5.0.1",
+    "jsdoc": "^4.0.4",
+    "morgan": "^1.10.0",
+    "open": "^10.1.0"
   }
 }
