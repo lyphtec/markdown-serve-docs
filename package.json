@@ -1,6 +1,6 @@
 {
   "name": "markdown-serve-docs",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Docs generator for markdown-serve",
   "private": true,
   "scripts": {
@@ -22,14 +22,14 @@
   },
   "homepage": "https://github.com/lyphtec/markdown-serve-docs",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "type": "module",
   "dependencies": {
     "docdash": "^2.0.2",
-    "express": "^5.0.1",
-    "jsdoc": "^4.0.4",
-    "morgan": "^1.10.0",
-    "open": "^10.1.0"
+    "express": "^5.2.1",
+    "jsdoc": "^4.0.5",
+    "morgan": "^1.11.0",
+    "open": "^11.0.1"
   }
 }
